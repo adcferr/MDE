@@ -15,9 +15,9 @@
 
 #setting vars
 $grantType = "client_credentials" #connection flow
-$clientId = Read-Host "App Id "  #id for ConnectViaApp
-$clientSecret = Read-Host "App Secret" -AsSecureString #secret for ConnectViaApp
-$tenantId = Read-Host "Tenant Id " #swarupa tenant
+$clientId = Read-Host "App Id "  #Appid  
+$clientSecret = Read-Host "App Secret"  #secret  
+$tenantId = Read-Host "Tenant Id " # tenant
 $oAuthUri = "https://login.microsoftonline.com/$tenantId/oauth2/token" 
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
