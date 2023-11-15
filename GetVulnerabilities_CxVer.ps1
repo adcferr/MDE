@@ -79,21 +79,21 @@ if(!([string]::IsNullOrEmpty($path_) )) {
 
             $Log = New-Object PSObject -Property @{
                 
-                #Get AppId for Current App
+                #Get Id 
                 "Id" = $obj.Id
-                #Get ObjectId for current App
+                #Get CVEId 
                 "cveId" = $obj.cveId
-                #get App Display Name
+                #get machineId
                 "machineId" = $obj.machineId
-                #Get SignOnMode for App
+                #Get fixingKbId
                 "fixingKbId" = $obj.fixingKbId
-                #Get AppId for Current App
+                #Get productName
                 "productName" = $obj.productName
                 #Get ObjectId for current App
                 "productVendor" = $obj.productVendor
-                #get App Display Name
+                #get productVersion
                 "productVersion" = $obj.productVersion
-                #Get SignOnMode for App
+                #Get severity
                 "severity" = $obj.severity
             }
 
